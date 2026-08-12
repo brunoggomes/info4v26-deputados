@@ -1,8 +1,13 @@
-<h1>Deputados</h1>
+<h1 class="titulo">Deputados</h1>
 
-<div>
+<div class="deputados">
     @for(dep of deputados(); track dep.id) {
-        <p><img [src]="dep.urlFoto" alt=""></p>
-        <p>{{dep.nome}}</p>
+        <div class="card-deputado">
+            <p><img [src]="dep.urlFoto" alt=""></p>
+            <p>{{dep.nome}}</p>
+            <p>{{dep.siglaPartido}} - 
+               {{dep.siglaUf}}
+            </p>
+        </div>
     }
 </div>

@@ -1,0 +1,26 @@
+.titulo {
+    text-align: center;
+}
+
+.deputados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-deputado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 200px; 
+}
+
+.card-deputado img {
+    width: 150px;
+    height: auto;
+}

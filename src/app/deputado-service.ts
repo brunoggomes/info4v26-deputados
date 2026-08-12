@@ -12,4 +12,8 @@ export class DeputadoService {
         return this.#http.get<RespostaApi>(
             `${this.APIURL}/deputados?ordem=ASC&ordenarPor=nome`)
     }
+
+    obterPorNome(nome: string) {
+        
+    }
 }
