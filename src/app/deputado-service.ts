@@ -13,7 +13,7 @@ export class DeputadoService {
             `${this.APIURL}/deputados?ordem=ASC&ordenarPor=nome`)
     }
 
-    obterPorNome(nome: string) {
-        
+    obterPorNome(nome: string): Observable<RespostaApi> {
+        return this.#http.get<RespostaApi>('...');
     }
 }

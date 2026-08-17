@@ -4,7 +4,7 @@
     @for(dep of deputados(); track dep.id) {
         <div class="card-deputado">
             <p><img [src]="dep.urlFoto" alt=""></p>
-            <p>{{dep.nome}}</p>
+            <p>{{dep.nome}}-{{dep.id}}</p>
             <p>{{dep.siglaPartido}} - 
                {{dep.siglaUf}}
             </p>
